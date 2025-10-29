@@ -1,0 +1,228 @@
+/* ============================================= */
+/* ESTILS.CSS - Projecte Monstià30 (MontsiTech) */
+/* ============================================= */
+
+/* ---------------------------------- */
+/* 1. VARIABLES (Colors i Fonts)
+/* ---------------------------------- */
+/* Definir variables és la millor pràctica.
+   Si el client vol canviar un color, només ho canvies aquí.
+*/
+:root {
+    --color-primari: #004a99;       /* Blau corporatiu principal */
+    --color-secundari: #0056b3;     /* Un blau una mica més clar (botons) */
+    --color-fons: #f4f7f6;           /* Un gris molt suau pel fons de la pàgina */
+    --color-fons-targeta: #ffffff;   /* Blanc per a les targetes/contingut */
+    --color-text: #333333;           /* Gris fosc pel text (millor que negre pur) */
+    --color-text-clar: #ffffff;      /* Blanc per text sobre fons foscos */
+    --font-principal: 'Arial', sans-serif;
+    --ample-maxim: 1100px;           /* Ample màxim del contingut */
+    --radi-vora: 8px;              /* Per cantonades arrodonides */
+}
+
+
+/* ---------------------------------- */
+/* 2. RESETEIG BÀSIC I GENERALS
+/* ---------------------------------- */
+
+/* Això fa que el 'padding' i 'border' no afectin l'ample 
+   total dels elements. És essencial.
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px; /* Mida de font base */
+}
+
+body {
+    font-family: var(--font-principal);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-fons);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primari);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: var(--color-secundari);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------------- */
+/* 3. LAYOUT / ESTRUCTURA COMUNA
+/* ---------------------------------- */
+
+/* Aquesta és la capçalera que es repetirà 
+   a index.html, digitalitzacio.html, etc.
+*/
+.header-principal {
+    background-color: var(--color-primari);
+    color: var(--color-text-clar);
+    padding: 20px 30px;
+    border-bottom: 3px solid var(--color-secundari);
+    
+    /* Flexbox per alinear logo i menú */
+    display: flex;
+    justify-content: space-between; /* Títol a l'esquerra, menú a la dreta */
+    align-items: center;
+}
+
+.header-principal h1 {
+    color: var(--color-text-clar);
+    font-size: 1.8rem;
+    margin: 0; /* Traiem el marge per defecte del h1 */
+}
+
+.navegacio-principal a {
+    color: var(--color-text-clar);
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navegacio-principal a:hover,
+.navegacio-principal a.actiu { /* Pots afegir la classe 'actiu' a la pàgina actual */
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Aquesta serà la nostra àrea de contingut principal.
+   Centra el contingut i li dona espai.
+*/
+.contingut-principal {
+    width: 90%;
+    max-width: var(--ample-maxim);
+    margin: 30px auto; /* 30px d'espai dalt/baix, centrat automàticament */
+    padding: 30px;
+    background-color: var(--color-fons-targeta);
+    border-radius: var(--radi-vora);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* El peu de pàgina comú.
+*/
+.footer-principal {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    background-color: #333;
+    color: #aaa; /* Un gris clar pel text del footer */
+    border-top: 3px solid #444;
+}
+
+
+/* ---------------------------------- */
+/* 4. COMPONENTS I UTILITATS
+/* ---------------------------------- */
+/* Classes genèriques que podeu reutilitzar 
+   a qualsevol pàgina.
+*/
+
+/* Estil de botó principal */
+.boto {
+    display: inline-block;
+    background-color: var(--color-secundari);
+    color: var(--color-text-clar);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boto:hover {
+    background-color: var(--color-primari);
+    text-decoration: none;
+}
+
+/* Estil per als formularis */
+.formulari-generic div {
+    margin-bottom: 20px;
+}
+
+.formulari-generic label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulari-generic input[type="text"],
+.formulari-generic input[type="email"],
+.formulari-generic textarea,
+.formulari-generic select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulari-generic textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ======================================================= */
+/* */
+/* 5. ESTILS ESPECÍFICS DE CADA PÀGINA                     */
+/* (Aquí és on afegiu vosaltres el codi)                  */
+/* */
+/* ======================================================= */
+
+
+/* ---------------------------------- */
+/* ESTILS PÀGINA INICI (index.html)
+/* ---------------------------------- */
+/* Exemple:
+   .hero-benvinguda { ... }
+   .targetes-navegacio { ... }
+   .targeta { ... }
+*/
+
+
+/* ---------------------------------- */
+/* ESTILS PÀGINA DIGITALITZACIÓ
+/* (Afegits pel company A)
+/* ---------------------------------- */
+/* Exemple:
+   .contingut-digitalitzacio h2 { ... }
+   .formulari-contacte-digital { ... }
+*/
+
+
+/* ---------------------------------- */
+/* ESTILS PÀGINA SOSTENIBILITAT
+/* (Afegits pel company B)
+/* ---------------------------------- */
+/* Exemple:
+   .contingut-sostenibilitat .llista-ods { ... }
+   .formulari-suggeriments-soste { ... }
+*/
