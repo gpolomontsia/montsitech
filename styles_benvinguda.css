@@ -15,7 +15,7 @@ body {
   align-items: center;
 
   /* Opcional: un color de fondo para la página */
-  background-color: #f4f4f4; 
+  background-color: #ffffff; 
 }
 
 .boton {
@@ -60,4 +60,6 @@ a, a:visited, a:hover, a:active {
     text-align: center;
     justify-content: center;
     margin: auto;
+    box-shadow: none;  /* Esto quita cualquier sombra heredada */
+    border: none;      /* Esto quita cualquier borde heredado */
 }
