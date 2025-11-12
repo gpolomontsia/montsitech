@@ -1,0 +1,63 @@
+html, body {
+  height: 100%; /* MUY IMPORTANTE para centrar verticalmente */
+  margin: 0;     /* Quita márgenes por defecto */
+  padding: 0;    /* Quita rellenos por defecto */
+}
+
+/* 2. Usamos Flexbox en el BODY para centrar su contenido */
+body {
+  display: flex;
+
+  /* Centra horizontalmente (Eje H) */
+  justify-content: center;
+
+  /* Centra verticalmente (Eje V) */
+  align-items: center;
+
+  /* Opcional: un color de fondo para la página */
+  background-color: #f4f4f4; 
+}
+
+.boton {
+  display: block;
+  width: 450px;
+  padding: 30px 40px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none; /* Quita el subrayado */
+  text-align: center; /* Centra el texto */
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  margin: 0.5rem;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none; /* Quita el subrayado en todos los estados */
+  color: inherit; /* Evita que el enlace cambie el color del texto del botón */
+}
+
+.boton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores específicos */
+.digi {
+  background-color: #004a99; /* Azul (Digitalización) */
+}
+
+.soste {
+  background-color: #4CAF50; /* Verde (Sostenibilidad) */
+}
+
+.intra {
+  background-color: #607D8B; /* Gris azulado (Intranet) */
+}
+
+.benvinguda{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}

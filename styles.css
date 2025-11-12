@@ -1,0 +1,148 @@
+/* --- Configuración General y Reset Básico --- */
+html {
+  box-sizing: border-box; /* Hace que el padding no afecte al ancho total */
+  scroll-behavior: smooth; /* Desplazamiento suave para anclas */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Fuente limpia y moderna (digital) */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Fondo general claro, (eco-friendly) */
+  color: #333333; /* Color de texto principal (oscuro para legibilidad) */
+  line-height: 1.6; /* Espaciado entre líneas para fácil lectura */
+}
+
+/* --- Estructura Principal (Header, Nav, Main, Footer) --- */
+header {
+  background-color: #004a99; /* Azul corporativo/digital */
+  color: #ffffff;
+  padding: 25px 40px;
+  text-align: center;
+}
+
+nav {
+  background-color: #4CAF50; /* Verde sostenibilidad */
+  padding: 15px;
+  text-align: center;
+  position: sticky; /* Fija el menú al hacer scroll */
+  top: 0;
+  z-index: 100;
+}
+
+main {
+  max-width: 1000px; /* Ancho máximo del contenido */
+  margin: 30px auto; /* Centra el contenido principal */
+  padding: 0 20px;
+}
+
+section {
+  background-color: #ffffff; /* Fondo blanco para las secciones */
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  border-radius: 8px; /* Bordes redondeados (moderno) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+footer {
+  background-color: #333333; /* Footer oscuro */
+  color: #f4f4f4;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+/* --- Tipografía (Títulos y Párrafos) --- */
+h1 {
+  color: #004a99; /* Azul digital */
+  font-size: 2.8rem;
+  margin-top: 0;
+}
+
+h2 {
+  color: #4CAF50; /* Verde sostenible */
+  font-size: 2.2rem;
+  border-bottom: 3px solid #eeeeee; /* Separador sutil */
+  padding-bottom: 8px;
+  margin-top: 40px;
+}
+
+h3 {
+  color: #555555;
+  font-size: 1.6rem;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* --- Enlaces (Navegación y Contenido) --- */
+nav a {
+  color: #ffffff; /* Enlaces del menú en blanco */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 20px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Enlaces dentro del contenido (section, article, p) */
+main a {
+  color: #004a99; /* Azul digital */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main a:hover {
+  text-decoration: underline; /* Subrayado clásico al pasar el ratón */
+}
+
+/* --- Listas y Citas --- */
+ul, ol {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+blockquote {
+  border-left: 5px solid #4CAF50; /* Línea lateral verde */
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  font-style: italic;
+  color: #555;
+}
+
+/* --- Multimedia (Imágenes) --- */
+img {
+  max-width: 100%; /* Hace las imágenes responsive */
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados consistentes */
+}
+
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    text-align: center;
+    justify-content: center;
+}
