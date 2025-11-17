@@ -1,70 +1,83 @@
 /* --- Configuración General y Reset Básico --- */
 html {
-  box-sizing: border-box; /* Hace que el padding no afecte al ancho total */
-  scroll-behavior: smooth; /* Desplazamiento suave para anclas */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* Respetamos el tamaño de fuente del navegador (normalmente 16px) */
+  font-size: 100%;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; /* Fuente limpia y moderna (digital) */
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Fondo general claro, (eco-friendly) */
-  color: #333333; /* Color de texto principal (oscuro para legibilidad) */
-  line-height: 1.6; /* Espaciado entre líneas para fácil lectura */
+  background-color: #f4f4f4;
+  color: #333333;
+  line-height: 1.6;
 }
 
 /* --- Estructura Principal (Header, Nav, Main, Footer) --- */
 header {
-  background-color: #004a99; /* Azul corporativo/digital */
+  background-color: #004a99;
   color: #ffffff;
-  padding: 25px 40px;
+  /* Convertido: 25px -> 1.5625rem, 40px -> 2.5rem */
+  padding: 1.5625rem 2.5rem;
   text-align: center;
 }
 
 nav {
-  background-color: #4CAF50; /* Verde sostenibilidad */
-  padding: 15px;
+  background-color: #4CAF50;
+  /* Convertido: 15px -> 0.9375rem */
+  padding: 0.9375rem;
   text-align: center;
-  position: sticky; /* Fija el menú al hacer scroll */
+  position: sticky;
   top: 0;
   z-index: 100;
 }
 
 main {
-  max-width: 1000px; /* Ancho máximo del contenido */
-  margin: 30px auto; /* Centra el contenido principal */
-  padding: 0 20px;
+  max-width: 1000px;
+  /* Convertido: 30px -> 1.875rem, 20px -> 1.25rem */
+  margin: 1.875rem auto;
+  padding: 0 1.25rem;
 }
 
 section {
-  background-color: #ffffff; /* Fondo blanco para las secciones */
-  padding: 25px 30px;
-  margin-bottom: 25px;
-  border-radius: 8px; /* Bordes redondeados (moderno) */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  background-color: #ffffff;
+  /* Convertido: 25px -> 1.5625rem, 30px -> 1.875rem */
+  padding: 1.5625rem 1.875rem;
+  /* Convertido: 25px -> 1.5625rem */
+  margin-bottom: 1.5625rem;
+  /* Convertido: 8px -> 0.5rem */
+  border-radius: 0.5rem;
+  /* Sombra (px está bien aquí) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 footer {
-  background-color: #333333; /* Footer oscuro */
+  background-color: #333333;
   color: #f4f4f4;
   text-align: center;
-  padding: 25px;
-  margin-top: 40px;
+  /* Convertido: 25px -> 1.5625rem, 40px -> 2.5rem */
+  padding: 1.5625rem;
+  margin-top: 2.5rem;
 }
 
 /* --- Tipografía (Títulos y Párrafos) --- */
+/* (Esto ya estaba perfecto en 'rem') */
 h1 {
-  color: #004a99; /* Azul digital */
+  color: #004a99;
   font-size: 2.8rem;
   margin-top: 0;
 }
 
 h2 {
-  color: #4CAF50; /* Verde sostenible */
+  color: #4CAF50;
   font-size: 2.2rem;
-  border-bottom: 3px solid #eeeeee; /* Separador sutil */
-  padding-bottom: 8px;
-  margin-top: 40px;
+  /* Borde (px está bien aquí) */
+  border-bottom: 3px solid #eeeeee;
+  /* Convertido: 8px -> 0.5rem, 40px -> 2.5rem */
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
 }
 
 h3 {
@@ -73,76 +86,82 @@ h3 {
 }
 
 p {
-  margin-bottom: 15px;
+  /* Convertido: 15px -> 0.9375rem */
+  margin-bottom: 0.9375rem;
 }
 
 /* --- Enlaces (Navegación y Contenido) --- */
 nav a {
-  color: #ffffff; /* Enlaces del menú en blanco */
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  padding: 15px 20px;
+  /* Convertido: 15px -> 0.9375rem, 20px -> 1.25rem */
+  padding: 0.9375rem 1.25rem;
   transition: background-color 0.3s;
+  /* Importante para que el padding funcione bien */
+  display: inline-block;
 }
 
 nav a:hover {
-  background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+  background-color: #45a049;
 }
 
-/* Enlaces dentro del contenido (section, article, p) */
 main a {
-  color: #004a99; /* Azul digital */
+  color: #004a99;
   text-decoration: none;
   font-weight: bold;
 }
 
 main a:hover {
-  text-decoration: underline; /* Subrayado clásico al pasar el ratón */
+  text-decoration: underline;
 }
 
 /* --- Listas y Citas --- */
 ul, ol {
-  margin-left: 20px;
-  padding-left: 15px;
+  /* Convertido: 20px -> 1.25rem, 15px -> 0.9375rem */
+  margin-left: 1.25rem;
+  padding-left: 0.9375rem;
 }
 
 li {
-  margin-bottom: 10px;
+  /* Convertido: 10px -> 0.625rem */
+  margin-bottom: 0.625rem;
 }
 
 blockquote {
-  border-left: 5px solid #4CAF50; /* Línea lateral verde */
-  margin: 20px 0;
-  padding: 10px 20px;
+  /* Borde (px está bien aquí) */
+  border-left: 5px solid #4CAF50;
+  /* Convertido: 20px -> 1.25rem, 10px -> 0.625rem */
+  margin: 1.25rem 0;
+  padding: 0.625rem 1.25rem;
   background-color: #f9f9f9;
   font-style: italic;
   color: #555;
 }
 
 /* --- Multimedia (Imágenes) --- */
-img {
-  max-width: 100%; /* Hace las imágenes responsive */
-  height: auto;
-  border-radius: 8px; /* Bordes redondeados consistentes */
-}
+
 
 figure {
-  margin: 20px 0;
+  /* Convertido: 20px -> 1.25rem */
+  margin: 1.25rem 0;
   text-align: center;
 }
 
 figcaption {
   font-style: italic;
   color: #777;
-  margin-top: 5px;
+  /* Convertido: 5px -> 0.3125rem */
+  margin-top: 0.3125rem;
   font-size: 0.9rem;
 }
 
-.flex{
-    display: flex;
+/* --- Clases de utilidad --- */
+.flex {
+  display: flex;
 }
 
-.center{
-    text-align: center;
-    justify-content: center;
+.center {
+  text-align: center;
+  justify-content: center;
 }
