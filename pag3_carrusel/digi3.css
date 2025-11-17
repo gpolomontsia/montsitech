@@ -1,0 +1,206 @@
+/* --- Fonts i Estils Base --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Variable de color per H2 i títols de targeta */
+:root {
+    --color-accent-nou: #c0936f; /* El color que vas triar */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* --- Enllaços --- */
+a {
+    color: #2563eb; 
+    text-decoration: underline;
+    overflow-wrap: break-word;
+}
+
+/* --- Contenidor Principal --- */
+.contenidor {
+    /* S'ha eliminat max-width per a amplada completa */
+    
+    /* Marge dret a 5rem */
+    padding: 1.5rem 5rem 1.5rem 1.5rem;
+}
+
+/* --- Capçalera --- */
+header h1 {
+    font-size: 1.875rem;
+    font-weight: 400; 
+    margin-bottom: 0.5rem;
+}
+
+/* Classes per als colors del H1 */
+.titol-marro {
+    color: var(--color-accent-nou);
+}
+.titol-negre {
+    color: #000000;
+}
+
+header h2 {
+    font-size: 1.25rem;
+    font-weight: 700; 
+    color: #000000;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2.5rem; /* Tabulació */
+}
+
+/* Barra lateral del H2 */
+header h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background-color: var(--color-accent-nou); 
+}
+
+/* --- CLAU: Disseny Flexbox Principal --- */
+.contingut-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2.5rem; /* Tabulació */
+}
+
+/* --- Columna Esquerra --- */
+.principal {
+    width: 100%;
+}
+
+/* --- Estils de les Seccions --- */
+.seccio {
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.seccio-titol {
+    background-color: var(--color-accent-nou); 
+    padding: 0.25rem 1.5rem;
+}
+
+.seccio-titol h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.seccio-contingut {
+    background-color: #f7f3f0;
+}
+
+.seccio-contingut ul {
+    list-style: none;
+    padding: 0.75rem 1.5rem 0.5rem 1.5rem;
+    margin: 0;
+}
+
+.seccio-contingut li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.seccio-contingut li span {
+    flex: 1; 
+}
+
+.seccio-contingut li::before {
+    content: '|';
+    color: #D49A7A;
+    font-weight: 700;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* Canvia el color de la barra de l'ÚLTIM element a negre */
+.seccio-contingut li:last-child::before {
+    color: #000000;
+}
+
+/* --- Columna Dreta (Lateral) --- */
+.lateral {
+    width: 100%;
+}
+
+img.video {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    aspect-ratio: 16 / 9; 
+    background-color: #000000; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.lateral p,
+.lateral h3,
+.lateral ul {
+    margin-bottom: 1rem;
+}
+
+.lateral .text-secundari {
+    color: #000000; 
+    font-size: 0.9rem; 
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.lateral h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 1rem; 
+}
+
+.llista-amb-barra {
+    list-style: none;
+    padding-left: 0;
+}
+
+.llista-amb-barra li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.llista-amb-barra li::before {
+    content: '|';
+    color: #D49A7A;
+    font-weight: 700;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* --- Media Query per Escriptori (Responsive) --- */
+@media (min-width: 768px) {
+    
+    .contingut-flex {
+        flex-direction: row;
+    }
+
+    .principal {
+        /* CANVI: Proporció 65% (13/20) */
+        flex: 13;
+    }
+
+    .lateral {
+        /* CANVI: Proporció 35% (7/20) */
+        flex: 7;
+    }
+}
