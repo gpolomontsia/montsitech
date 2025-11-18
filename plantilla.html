@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CADA COMPANY HA DE POSAR EL SEU TÍTOL AQUÍ -->
+    <title>Títol de la Pàgina</title>
+    <!-- TOTS FEU SERVIR EL MATEIX CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- WRAPPER GENERAL (Per a les fletxes laterals) -->
+    <div class="site-wrapper">
+
+        <!-- FLETXA ESQUERRA (Canviar l'enllaç) -->
+        <a href="pagina-anterior.html" class="nav-arrow" title="Anterior">&larr;</a>
+
+        <!-- CONTENIDOR CENTRAL -->
+        <div class="contenidor">
+
+            <!-- ELEMENT <main>: Només n'hi ha un per pàgina. -->
+            <main>
+
+                <!-- LA PLANTILLA DE SECCIÓ -->
+                <section class="seccio-plantilla">
+
+                    <!-- 1. CAPÇALERA DE LA SECCIÓ -->
+                    <header>
+                        <h1>
+                            <span class="titol-marro">TÍTOL PRINCIPAL MARRÓ:</span>
+                            <span class="titol-negre">SUBTÍTOL NEGRE</span>
+                        </h1>
+                        <h2>Subtítol de la secció amb barra lateral.</h2>
+                    </header>
+
+                    <!-- 2. CONTENIDOR FLEX (Abans era main, ara és div) -->
+                    <div class="contingut-flex">
+
+                        <!-- COLUMNA ESQUERRA -->
+                        <article class="principal">
+                            
+                            <!-- Exemple de Targeta -->
+                            <section class="seccio">
+                                <div class="seccio-titol">
+                                    <h3>Títol de la targeta</h3>
+                                </div>
+                                <div class="seccio-contingut">
+                                    <ul>
+                                        <li><span>Element de llista...</span></li>
+                                        <li><span>Element de llista...</span></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                        </article>
+
+                        <!-- COLUMNA DRETA (ASIDE) -->
+                        <aside class="lateral">
+                            <!-- Contingut lateral -->
+                            <p>Text de la barra lateral...</p>
+                        </aside>
+
+                    </div> <!-- Fi de .contingut-flex -->
+
+                </section> <!-- Fi de .seccio-plantilla -->
+
+            </main>
+
+        </div> <!-- Fi de .contenidor -->
+
+        <!-- FLETXA DRETA (Canviar l'enllaç) -->
+        <a href="pagina-seguent.html" class="nav-arrow" title="Següent">&rarr;</a>
+
+    </div> <!-- Fi de .site-wrapper -->
+
+</body>
+</html>
