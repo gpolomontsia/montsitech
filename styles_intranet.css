@@ -1,0 +1,62 @@
+/* Estils per a la Intranet del Montsià */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.empresa {
+  background: #ffffff;
+  margin: 15px auto;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  max-width: 700px;
+  transition: transform 0.2s ease;
+}
+
+.empresa:hover {
+  transform: scale(1.01);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px 0;
+}
+
+summary:hover {
+  color: #52ab98;
+}
+
+details {
+  margin-top: 10px;
+}
+
+details p {
+  margin: 5px 0 5px 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 6px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2b6777;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #52ab98;
+  text-decoration: underline;
+}
