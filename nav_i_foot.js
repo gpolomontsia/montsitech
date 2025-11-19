@@ -1,7 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    // 1. Definir el contenido del Navbar (Barra de navegación)
-    // Usamos estilos en línea para asegurar que se vea bien sin necesitar un CSS externo
+document.addEventListener("DOMContentLoaded", function () {
     const navHTML = `
     <nav style="
         position: sticky; 
@@ -23,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
         
         <div class="nav-links">
-            <a href="digitalitzacio.html" style="color: white; text-decoration: none; margin-left: 20px;">Digitalització</a>
+            <a href="pag1_carrusel/digi1.html" style="color: white; text-decoration: none; margin-left: 20px;">Digitalització</a>
             <a href="proximament.html" style="color: white; text-decoration: none; margin-left: 20px;">Sostenibilitat</a>
             <a href="login.html" style="color: white; text-decoration: none; margin-left: 20px;">Intranet</a>
         </div>
     </nav>
     `;
 
-    // 2. Definir el contenido del Footer
+
     const footerHTML = `
     <footer style="
         background-color: #f4f4f4; 
@@ -49,10 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
         </p>
     </footer>
     `;
-
-    // 3. Inyectar el Navbar al principio del body
     document.body.insertAdjacentHTML("afterbegin", navHTML);
-
-    // 4. Inyectar el Footer al final del body
     document.body.insertAdjacentHTML("beforeend", footerHTML);
 });
