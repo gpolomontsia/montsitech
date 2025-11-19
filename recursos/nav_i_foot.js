@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
-=======
-document.addEventListener("DOMContentLoaded", function() {
-    
-    // 1. Definir el contingut del Navbar (Barra de navegació)
-    // Utilitzem estils en línia per assegurar que es vegi bé sense necessitar un CSS extern
->>>>>>> a5a04e9acdb72b31d237b10d4ad161a3fc2a6848
     const navHTML = `
     <nav style="
         position: sticky; 
@@ -23,22 +16,17 @@ document.addEventListener("DOMContentLoaded", function() {
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     ">
         <div style="font-size: 1.5rem; font-weight: bold;">
-            <a href="index.html" style="color: white; text-decoration: none; margin-left: 20px;">Montsià 30</a>
+            <a href="../index.html" style="color: white; text-decoration: none; margin-left: 20px;">Montsià 30</a>
         </div>
         
         <div class="nav-links">
-            <a href="pag1_carrusel/digi1.html" style="color: white; text-decoration: none; margin-left: 20px;">Digitalització</a>
-            <a href="proximament.html" style="color: white; text-decoration: none; margin-left: 20px;">Sostenibilitat</a>
-            <a href="login.html" style="color: white; text-decoration: none; margin-left: 20px;">Intranet</a>
+            <a href="../digitalitzacio/pag1_carrusel/digi1.html" style="color: white; text-decoration: none; margin-left: 20px;">Digitalització</a>
+            <a href="../recursos/proximament.html" style="color: white; text-decoration: none; margin-left: 20px;">Sostenibilitat</a>
+            <a href="../intranet/login.html" style="color: white; text-decoration: none; margin-left: 20px;">Intranet</a>
         </div>
     </nav>
     `;
 
-<<<<<<< HEAD
-
-=======
-    // 2. Definir el contingut del Footer
->>>>>>> a5a04e9acdb72b31d237b10d4ad161a3fc2a6848
     const footerHTML = `
     <footer style="
         background-color: #f4f4f4; 
@@ -57,14 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         </p>
     </footer>
     `;
-<<<<<<< HEAD
     document.body.insertAdjacentHTML("afterbegin", navHTML);
-=======
-
-    // 3. Injectar el Navbar al principi del body
-    document.body.insertAdjacentHTML("afterbegin", navHTML);
-
-    // 4. Injectar el Footer al final del body
->>>>>>> a5a04e9acdb72b31d237b10d4ad161a3fc2a6848
     document.body.insertAdjacentHTML("beforeend", footerHTML);
 });

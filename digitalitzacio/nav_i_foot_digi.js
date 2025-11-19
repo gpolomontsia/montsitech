@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     ">
         <div style="font-size: 1.5rem; font-weight: bold;">
-            <a href="index.html" style="color: white; text-decoration: none; margin-left: 20px;">Montsià 30</a>
+            <a href="../../index.html" style="color: white; text-decoration: none; margin-left: 20px;">Montsià 30</a>
         </div>
         
         <div class="nav-links">
             <a href="../pag1_carrusel/digi1.html" style="color: white; text-decoration: none; margin-left: 20px;">Digitalització</a>
-            <a href="../proximament.html" style="color: white; text-decoration: none; margin-left: 20px;">Sostenibilitat</a>
-            <a href="../login.html" style="color: white; text-decoration: none; margin-left: 20px;">Intranet</a>
+            <a href="../../recursos/proximament.html" style="color: white; text-decoration: none; margin-left: 20px;">Sostenibilitat</a>
+            <a href="../../intranet/login.html" style="color: white; text-decoration: none; margin-left: 20px;">Intranet</a>
         </div>
     </nav>
     `;
