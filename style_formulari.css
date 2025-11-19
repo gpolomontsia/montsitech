@@ -1,0 +1,82 @@
+/* --- Estilos del Formulario --- */
+
+/* Contenedor tipo tarjeta */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Evita que sea demasiado ancho */
+    margin: 20px;
+    text-align: left; /* El texto dentro del form va a la izquierda */
+}
+
+.form-container h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.form-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Grupos de inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Estilos de Inputs y Selects */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Para que el padding no rompa el ancho */
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50; /* Color verde sostenibilidad */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Checkboxes */
+.checkbox-group label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* Botón */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50; /* Verde Agenda 2030 */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
