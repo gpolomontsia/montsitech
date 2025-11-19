@@ -1,16 +1,10 @@
-/* =========================================
-   1. FONTS I VARIABLES
-   ========================================= */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-    /* Color d'accent (Fons títol targetes, barra H2) */
     --color-accent-nou: #c0936f; 
 }
 
-/* =========================================
-   2. ESTILS GENERALS (RESET)
-   ========================================= */
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -26,16 +20,14 @@ a {
     overflow-wrap: break-word;
 }
 
-/* =========================================
-   3. ESTRUCTURA DEL CARRUSEL (NAVEGACIÓ)
-   ========================================= */
+
 .site-wrapper {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
     width: 100%;
     box-sizing: border-box; 
-    padding: 0.1rem; /* Marges exteriors mínims */
+    padding: 0.1rem;
     min-height: 100vh;
 }
 
@@ -60,9 +52,6 @@ a {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* =========================================
-   4. CAPÇALERA I TÍTOLS PRINCIPALS
-   ========================================= */
 .contenidor {
     width: 100%;
     max-width: 1440px; 
@@ -78,7 +67,7 @@ header h1 {
 }
 
 .titol-marro {
-    color: #a87954; /* Marró fosc */
+    color: #a87954; 
 }
 .titol-negre {
     color: #000000;
@@ -106,9 +95,6 @@ header h2::before {
     background-color: var(--color-accent-nou); 
 }
 
-/* =========================================
-   5. MAQUETACIÓ (GRID/FLEX)
-   ========================================= */
 .contingut-flex {
     display: flex;
     flex-direction: column;
@@ -124,24 +110,20 @@ header h2::before {
     width: 100%;
 }
 
-/* Media Query: Pantalles grans (Escriptori) */
 @media (min-width: 768px) {
     .contingut-flex {
         flex-direction: row;
     }
 
     .principal {
-        flex: 13; /* 65% */
+        flex: 13; 
     }
 
     .lateral {
-        flex: 7; /* 35% */
+        flex: 7; 
     }
 }
 
-/* =========================================
-   6. COMPONENT: TARGETES (SECCIONS)
-   ========================================= */
 .seccio {
     margin-bottom: 0.75rem;
 }
@@ -153,18 +135,15 @@ header h2::before {
 
 .seccio-titol h3 {
     font-size: 1.125rem;
-    font-weight: 700; /* Negreta */
+    font-weight: 700; 
     color: #ffffff;
     margin: 0;
 }
 
 .seccio-contingut {
-    background-color: #f7f3f0; /* Fons beix clar */
+    background-color: #f7f3f0; 
 }
 
-/* =========================================
-   7. LLISTES PERSONALITZADES
-   ========================================= */
 .seccio-contingut ul {
     list-style: none;
     padding: 0.75rem 1rem 0.5rem 1rem;
@@ -181,7 +160,6 @@ header h2::before {
     flex: 1; 
 }
 
-/* La barra taronja a l'esquerra de cada ítem */
 .seccio-contingut li::before {
     content: '|';
     color: #D49A7A; 
@@ -190,12 +168,10 @@ header h2::before {
     flex-shrink: 0;
 }
 
-/* L'últim ítem de la targeta té la barra negra */
 .seccio-contingut li:last-child::before {
     color: #000000;
 }
 
-/* Llistes a la barra lateral */
 .llista-amb-barra {
     list-style: none;
     padding-left: 0;
@@ -216,9 +192,6 @@ header h2::before {
     flex-shrink: 0;
 }
 
-/* =========================================
-   8. ALTRES ELEMENTS (IMATGES, TEXTOS)
-   ========================================= */
 img.video {
     width: 100%; 
     height: auto; 
