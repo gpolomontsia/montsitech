@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --color-accent-nou: #c0936f;
+    --color-marro-titol: #a87954;
+    --color-text: #000000;
+    --color-fons-beix: #f7f3f0;
+    --color-linies: #d49a7a;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+}
+
+.site-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.1rem;
+    min-height: 100vh;
+}
+
+.nav-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    margin: 0.2rem;
+    flex-shrink: 0;
+}
+
+.nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.contenidor {
+    width: 100%;
+    max-width: 1440px;
+    padding: 1.5rem 2rem;
+    flex-grow: 1;
+    align-self: flex-start;
+}
+
+header h1 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.titol-marro {
+    color: var(--color-marro-titol);
+}
+
+.titol-negre {
+    color: var(--color-text);
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--color-accent-nou);
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-left: 2.5rem;
+}
+
+header h2::before {
+    content: none;
+}
+
+.contingut-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2.5rem;
+}
+
+.principal {
+    width: 100%;
+}
+
+.lateral {
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .contingut-flex {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .principal {
+        flex: 75%;
+    }
+
+    .lateral {
+        flex: 25%;
+        padding-top: 4rem;
+    }
+}
+
+
+.text-intro {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.grid-tres-cols {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid-tres-cols {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .grid-tres-cols .col-item {
+        flex: 1;
+    }
+}
+
+.text-centrat .col-item h3 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.text-centrat .col-item p {
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.banner-separador {
+    position: relative;
+
+    background-color: var(--color-accent-nou);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.8rem 1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+    margin-left: 3.5rem;
+}
+
+.img-icona {
+    width: 45px;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.caixa-exemples {
+    background-color: var(--color-fons-beix);
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.amb-separadors .col-item p {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .amb-separadors .col-item {
+        position: relative;
+        padding: 0 1rem;
+    }
+
+    .amb-separadors .col-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: -0.75rem;
+        top: 0;
+        bottom: 0;
+        border-right: 2px dashed var(--color-linies);
+    }
+}
+
+.img-lateral {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.text-lateral-peu {
+    color: var(--color-marro-titol);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.fletxes {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.titol-bombeta {
+    justify-content: space-evenly;
+}
