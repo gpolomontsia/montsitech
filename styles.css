@@ -117,7 +117,8 @@ main a:hover {
 }
 
 /* --- Listas y Citas --- */
-ul, ol {
+ul,
+ol {
   /* Convertido: 20px -> 1.25rem, 15px -> 0.9375rem */
   margin-left: 1.25rem;
   padding-left: 0.9375rem;
