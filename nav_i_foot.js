@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    // 1. Definir el contenido del Navbar (Barra de navegación)
-    // Usamos estilos en línea para asegurar que se vea bien sin necesitar un CSS externo
+    // 1. Definir el contingut del Navbar (Barra de navegació)
+    // Utilitzem estils en línia per assegurar que es vegi bé sense necessitar un CSS extern
     const navHTML = `
     <nav style="
         position: sticky; 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </nav>
     `;
 
-    // 2. Definir el contenido del Footer
+    // 2. Definir el contingut del Footer
     const footerHTML = `
     <footer style="
         background-color: #f4f4f4; 
@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
         <p>
             <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="height:1em; vertical-align:middle;"> 
             <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="height:1em; vertical-align:middle;"> 
-            Montsià 30 - Aquesta obra està baix una llicència de creative commons.
+            Montsià 30 - Aquesta obra està sota una llicència de Creative Commons.
         </p>
     </footer>
     `;
 
-    // 3. Inyectar el Navbar al principio del body
+    // 3. Injectar el Navbar al principi del body
     document.body.insertAdjacentHTML("afterbegin", navHTML);
 
-    // 4. Inyectar el Footer al final del body
+    // 4. Injectar el Footer al final del body
     document.body.insertAdjacentHTML("beforeend", footerHTML);
 });

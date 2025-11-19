@@ -1,15 +1,13 @@
-/* =========================================
-   1. FONTS I VARIABLES
-   ========================================= */
+/* FONTS I VARIABLES */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
     --color-accent-nou: #c0936f; 
 }
 
-/* =========================================
-   2. ESTILS GENERALS
-   ========================================= */
+/* ESTILS GENERALS */
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -25,9 +23,8 @@ a {
     overflow-wrap: break-word;
 }
 
-/* =========================================
-   3. NAVEGACIÓ (CARRUSEL)
-   ========================================= */
+/* NAVEGACIÓ (CARRUSEL) */
+
 .site-wrapper {
     display: flex;
     align-items: center; 
@@ -59,9 +56,8 @@ a {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* =========================================
-   4. ESTRUCTURA PRINCIPAL
-   ========================================= */
+/* ESTRUCTURA PRINCIPAL */
+
 .contenidor {
     width: 100%;
     max-width: 1440px; 
@@ -121,9 +117,8 @@ header h2::before {
     width: 100%;
 }
 
-/* =========================================
-   5. COMPONENT: TARGETES (SECCIONS)
-   ========================================= */
+/* COMPONENT: TARGETES (SECCIONS) */
+
 .seccio {
     margin-bottom: 0.5rem;
 }
@@ -172,9 +167,8 @@ header h2::before {
     color: #000000;
 }
 
-/* =========================================
-   6. ESTILS BARRA LATERAL
-   ========================================= */
+/* ESTILS BARRA LATERAL */
+
 .video-enllac {
     display: block; 
     text-decoration: none;
@@ -249,9 +243,7 @@ img.video {
     flex-shrink: 0;
 }
 
-/* =========================================
-   7. MEDIA QUERY (RESPONSIVE)
-   ========================================= */
+/* MEDIA QUERY (RESPONSIVE) */
 @media (min-width: 768px) {
     .contingut-flex {
         flex-direction: row;
