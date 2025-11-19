@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari Montsià 30</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="afegits/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_formulari.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Formulari 1
+            </h1>
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="nombre">Nom complet:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="El teu nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correu electrònic:</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@montsia30.cat" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ods-prioritario">Quin ODS consideres més urgent?</label>
+                    <select id="ods-prioritario" name="ods-prioritario">
+                        <option value="" disabled selected>Selecciona una opció...</option>
+                        <option value="ods4">ODS 4: Educació de Qualitat</option>
+                        <option value="ods5">ODS 5: Igualtat de Gènere</option>
+                        <option value="ods7">ODS 7: Energia Assequible i No Contaminant</option>
+                        <option value="ods12">ODS 12: Producció i Consum Responsables</option>
+                        <option value="ods13">ODS 13: Acció pel Clima</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Quines accions realitzes actualment?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="acciones" value="reciclaje"> Reciclatge actiu</label>
+                        <label><input type="checkbox" name="acciones" value="transporte"> Ús de transport públic/bici</label>
+                        <label><input type="checkbox" name="acciones" value="papel"> Reducció d'ús de paper</label>
+                        <label><input type="checkbox" name="acciones" value="energia"> Estalvi energètic</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="propuesta">La teva proposta per millorar:</label>
+                    <textarea id="propuesta" name="propuesta" rows="4" placeholder="Escriu aquí la teva idea..."></textarea>
+                </div>
+
+                <a href="intranet.html"><button type="button" onclick="enviar()" class="btn-submit">Enviar Respostes</button></a>
+            </form>
+        </section>
+    </main>
+    <script src="nav_i_foot.js"></script>
+</body>

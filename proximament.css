@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el body mida al menos el 100% de la ventana */
+    display: flex;
+    flex-direction: column; /* Organiza: Nav arriba, Main centro, Footer abajo */
+    font-family: sans-serif; /* Opcional: para que coincida con el JS */
+}
+
+/* 2. Configuración del contenedor principal (main) */
+main {
+    flex-grow: 1; /* Hace que el main ocupe todo el espacio sobrante entre nav y footer */
+    display: flex;
+    justify-content: center; /* Centrado Horizontal */
+    align-items: center;     /* Centrado Vertical */
+    width: 100%;
+}
