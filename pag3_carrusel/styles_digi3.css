@@ -3,7 +3,7 @@
 
 /* Variable de color per H2 i títols de targeta */
 :root {
-    --color-accent-nou: #c0936f; /* El color que vas triar */
+    --color-accent-nou: #c0936f; 
 }
 
 body {
@@ -15,19 +15,54 @@ body {
     line-height: 1.6;
 }
 
-/* --- Enllaços --- */
 a {
     color: #2563eb; 
     text-decoration: underline;
     overflow-wrap: break-word;
 }
 
+/* ===============================================
+  === ESTRUCTURA DEL CARRUSEL ===
+  ===============================================
+*/
+.site-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 0.1rem; /* Marges exteriors mínims */
+    min-height: 100vh;
+}
+
+.nav-arrow {
+    width: 2.5rem; 
+    height: 2.5rem; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; 
+    font-weight: bold;
+    transition: background-color 0.2s;
+    margin: 0.2rem; /* Marge fletxa mínim */
+    flex-shrink: 0; 
+}
+
+.nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* --- Contenidor Principal --- */
 .contenidor {
-    /* S'ha eliminat max-width per a amplada completa */
-    
-    /* Marge dret a 5rem */
-    padding: 1.5rem 5rem 1.5rem 1.5rem;
+    width: 100%;
+    max-width: 1440px; 
+    padding: 1.5rem 2rem;
+    flex-grow: 1;
+    align-self: flex-start;
 }
 
 /* --- Capçalera --- */
@@ -37,16 +72,16 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-/* Classes per als colors del H1 */
 .titol-marro {
-    color: var(--color-accent-nou);
+    /* CANVI: Color restaurat al to més fosc */
+    color: #a87954;
 }
 .titol-negre {
     color: #000000;
 }
 
 header h2 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 700; 
     color: #000000;
     margin-bottom: 1rem;
@@ -54,10 +89,9 @@ header h2 {
     padding-left: 1.25rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-left: 2.5rem; /* Tabulació */
+    margin-left: 2.5rem; 
 }
 
-/* Barra lateral del H2 */
 header h2::before {
     content: '';
     position: absolute;
@@ -72,8 +106,8 @@ header h2::before {
 .contingut-flex {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-left: 2.5rem; /* Tabulació */
+    gap: 1.25rem;
+    margin-left: 2.5rem; 
 }
 
 /* --- Columna Esquerra --- */
@@ -83,18 +117,17 @@ header h2::before {
 
 /* --- Estils de les Seccions --- */
 .seccio {
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 0.75rem;
 }
 
 .seccio-titol {
     background-color: var(--color-accent-nou); 
-    padding: 0.25rem 1.5rem;
+    padding: 0.25rem 1rem;
 }
 
 .seccio-titol h3 {
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: 700; /* Negreta */
     color: #ffffff;
     margin: 0;
 }
@@ -105,7 +138,7 @@ header h2::before {
 
 .seccio-contingut ul {
     list-style: none;
-    padding: 0.75rem 1.5rem 0.5rem 1.5rem;
+    padding: 0.75rem 1rem 0.5rem 1rem;
     margin: 0;
 }
 
@@ -127,7 +160,6 @@ header h2::before {
     flex-shrink: 0;
 }
 
-/* Canvia el color de la barra de l'ÚLTIM element a negre */
 .seccio-contingut li:last-child::before {
     color: #000000;
 }
@@ -143,7 +175,6 @@ img.video {
     display: block; 
     aspect-ratio: 16 / 9; 
     background-color: #000000; 
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     margin-bottom: 1rem;
     object-fit: cover;
 }
@@ -161,6 +192,10 @@ img.video {
     font-style: italic;
 }
 
+.lateral .text-secundari:not(:last-child) {
+    margin-bottom: 0.25rem;
+}
+
 .lateral h3 {
     font-size: 1.125rem;
     font-weight: 700;
@@ -171,6 +206,7 @@ img.video {
 .llista-amb-barra {
     list-style: none;
     padding-left: 0;
+    margin-left: 1.5rem;
 }
 
 .llista-amb-barra li {
@@ -189,18 +225,15 @@ img.video {
 
 /* --- Media Query per Escriptori (Responsive) --- */
 @media (min-width: 768px) {
-    
     .contingut-flex {
         flex-direction: row;
     }
 
     .principal {
-        /* CANVI: Proporció 65% (13/20) */
-        flex: 13;
+        flex: 13; /* 65% */
     }
 
     .lateral {
-        /* CANVI: Proporció 35% (7/20) */
-        flex: 7;
+        flex: 7; /* 35% */
     }
 }
