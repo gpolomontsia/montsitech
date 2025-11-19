@@ -1,8 +1,6 @@
-/* --- Configuración General y Reset Básico --- */
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* Respetamos el tamaño de fuente del navegador (normalmente 16px) */
   font-size: 100%;
 }
 
@@ -15,18 +13,15 @@ body {
   line-height: 1.6;
 }
 
-/* --- Estructura Principal (Header, Nav, Main, Footer) --- */
 header {
   background-color: #004a99;
   color: #ffffff;
-  /* Convertido: 25px -> 1.5625rem, 40px -> 2.5rem */
   padding: 1.5625rem 2.5rem;
   text-align: center;
 }
 
 nav {
   background-color: #4CAF50;
-  /* Convertido: 15px -> 0.9375rem */
   padding: 0.9375rem;
   text-align: center;
   position: sticky;
@@ -36,20 +31,15 @@ nav {
 
 main {
   max-width: 1000px;
-  /* Convertido: 30px -> 1.875rem, 20px -> 1.25rem */
   margin: 1.875rem auto;
   padding: 0 1.25rem;
 }
 
 section {
   background-color: #ffffff;
-  /* Convertido: 25px -> 1.5625rem, 30px -> 1.875rem */
   padding: 1.5625rem 1.875rem;
-  /* Convertido: 25px -> 1.5625rem */
   margin-bottom: 1.5625rem;
-  /* Convertido: 8px -> 0.5rem */
   border-radius: 0.5rem;
-  /* Sombra (px está bien aquí) */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -57,13 +47,10 @@ footer {
   background-color: #333333;
   color: #f4f4f4;
   text-align: center;
-  /* Convertido: 25px -> 1.5625rem, 40px -> 2.5rem */
   padding: 1.5625rem;
   margin-top: 2.5rem;
 }
 
-/* --- Tipografía (Títulos y Párrafos) --- */
-/* (Esto ya estaba perfecto en 'rem') */
 h1 {
   color: #004a99;
   font-size: 2.8rem;
@@ -73,9 +60,7 @@ h1 {
 h2 {
   color: #6ea8f0;
   font-size: 2.2rem;
-  /* Borde (px está bien aquí) */
   border-bottom: 3px solid #eeeeee;
-  /* Convertido: 8px -> 0.5rem, 40px -> 2.5rem */
   padding-bottom: 0.5rem;
   margin-top: 2.5rem;
 }
@@ -86,19 +71,15 @@ h3 {
 }
 
 p {
-  /* Convertido: 15px -> 0.9375rem */
   margin-bottom: 0.9375rem;
 }
 
-/* --- Enlaces (Navegación y Contenido) --- */
 nav a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  /* Convertido: 15px -> 0.9375rem, 20px -> 1.25rem */
   padding: 0.9375rem 1.25rem;
   transition: background-color 0.3s;
-  /* Importante para que el padding funcione bien */
   display: inline-block;
 }
 
@@ -116,23 +97,18 @@ main a:hover {
   text-decoration: underline;
 }
 
-/* --- Listas y Citas --- */
 ul,
 ol {
-  /* Convertido: 20px -> 1.25rem, 15px -> 0.9375rem */
   margin-left: 1.25rem;
   padding-left: 0.9375rem;
 }
 
 li {
-  /* Convertido: 10px -> 0.625rem */
   margin-bottom: 0.625rem;
 }
 
 blockquote {
-  /* Borde (px está bien aquí) */
   border-left: 5px solid #4CAF50;
-  /* Convertido: 20px -> 1.25rem, 10px -> 0.625rem */
   margin: 1.25rem 0;
   padding: 0.625rem 1.25rem;
   background-color: #f9f9f9;
@@ -140,11 +116,7 @@ blockquote {
   color: #555;
 }
 
-/* --- Multimedia (Imágenes) --- */
-
-
 figure {
-  /* Convertido: 20px -> 1.25rem */
   margin: 1.25rem 0;
   text-align: center;
 }
@@ -152,12 +124,10 @@ figure {
 figcaption {
   font-style: italic;
   color: #777;
-  /* Convertido: 5px -> 0.3125rem */
   margin-top: 0.3125rem;
   font-size: 0.9rem;
 }
 
-/* --- Clases de utilidad --- */
 .flex {
   display: flex;
 }

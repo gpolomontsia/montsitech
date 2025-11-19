@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
+=======
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. Definir el contingut del Navbar (Barra de navegació)
+    // Utilitzem estils en línia per assegurar que es vegi bé sense necessitar un CSS extern
+>>>>>>> a5a04e9acdb72b31d237b10d4ad161a3fc2a6848
     const navHTML = `
     <nav style="
         position: sticky; 
@@ -27,7 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
     </nav>
     `;
 
+<<<<<<< HEAD
 
+=======
+    // 2. Definir el contingut del Footer
+>>>>>>> a5a04e9acdb72b31d237b10d4ad161a3fc2a6848
     const footerHTML = `
     <footer style="
         background-color: #f4f4f4; 
@@ -42,10 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>
             <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="height:1em; vertical-align:middle;"> 
             <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="height:1em; vertical-align:middle;"> 
-            Montsià 30 - Aquesta obra està baix una llicència de creative commons.
+            Montsià 30 - Aquesta obra està sota una llicència de Creative Commons.
         </p>
     </footer>
     `;
+<<<<<<< HEAD
     document.body.insertAdjacentHTML("afterbegin", navHTML);
+=======
+
+    // 3. Injectar el Navbar al principi del body
+    document.body.insertAdjacentHTML("afterbegin", navHTML);
+
+    // 4. Injectar el Footer al final del body
+>>>>>>> a5a04e9acdb72b31d237b10d4ad161a3fc2a6848
     document.body.insertAdjacentHTML("beforeend", footerHTML);
 });
